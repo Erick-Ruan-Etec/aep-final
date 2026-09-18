@@ -221,3 +221,14 @@ main .right>p {
         margin-top: 20px;
     }
 }
+
+.item {
+    position: relative;
+}
+
+.btn-deletar {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
