@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --bg-dark: rgb(10, 10, 24);
+    --bg-card: rgb(17, 17, 32);
+    --bg-header: rgb(20, 25, 61);
+    --bg-button: rgb(42, 42, 102);
+    --border-light: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 100%;
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-light);
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+main {
+    margin: 40px auto 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+main .left h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+main .right {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    background-color: var(--bg-button);
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

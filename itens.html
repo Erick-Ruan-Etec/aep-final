@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados E Perdidos</title>
+    <link rel="stylesheet" href="itens/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>Achados <span style="color: #00ffff">&</span> Perdidos</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="left">
+            <h2>Achados e perdidos</h2>
+            <p>Busque um item que você perdeu na lista, ou marque um item como perdido</p>
+        </div>
+         <div class="right">
+            <p>Visão geral</p>
+            <br>
+           <div class="links">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="como-usar.html">Como usar</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="filtros">
+        <div class="nome">
+            <input id="nome" type="text" placeholder="Pesquisar item perdido...">
+        </div>
+
+        <div class="categorias">
+            <label for="todos">📁 Todos</label>
+            <input type="radio" name="categoria" id="todos" value="0">
+
+            <label for="eletronicos">⚡Eletrônicos</label>
+            <input type="radio" name="categoria" id="eletronicos" value="1">
+
+            <label for="materiais">📗 Materiais</label>
+            <input type="radio" name="categoria" id="materiais" value="2">
+
+            <label for="acessorios">👓 Acessórios</label>
+            <input type="radio" name="categoria" id="acessorios" value="3">
+
+            <label for="outros">✨ Outros</label>
+            <input type="radio" name="categoria" id="outros" value="4">
+
+        </div>
+    </div>
+
+    <div id="lista"></div>
+    <script type="module" src="itens/script.js"></script>
+
+</body>
+
+</html>

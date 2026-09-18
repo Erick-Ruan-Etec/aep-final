@@ -1,0 +1,14 @@
+.informacoes {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.informacoes p {
+    margin: 0 300px;
+}
+
+img {
+    margin-top: 20px;
+
+    border-radius: 10px;
+}
