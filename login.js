@@ -2,6 +2,7 @@ import { supabaseClient } from "../supabase.js";
 
 const btnLogin = document.getElementById("btnlogin");
 const btnAdicionar = document.getElementById("btnAdicionar");
+const btnsDeletar = document.querySelectorAll(".btn-deletar");
 const modalItem = document.getElementById("modalItem");
 
 if (btnLogin) {
@@ -37,15 +38,24 @@ async function isLogged() {
 window.isLogged = isLogged;
 
 async function butao() {
-
     if (!btnAdicionar) return;
 
     const logado = await isLogged();
 
     if (logado) {
         btnAdicionar.style.display = "";
+
+        document.querySelectorAll(".btn-deletar").forEach(button => {
+            button.style.display = "block";
+            button.style.backgroundColor = "red";
+        });
+
     } else {
         btnAdicionar.style.display = "none";
+
+        document.querySelectorAll(".btn-deletar").forEach(button => {
+            button.style.display = "none";
+        });
     }
 }
 
@@ -135,3 +145,4 @@ document.addEventListener("keydown", (event) => {
         fechar();
     }
 });
+
