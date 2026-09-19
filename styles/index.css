@@ -12,3 +12,13 @@ img {
 
     border-radius: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .informacoes p {
+        margin: 0 30px;
+    }
+}
